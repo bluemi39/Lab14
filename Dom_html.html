@@ -10,9 +10,14 @@
 var message
 message=document.getElementById('message')
 message.innerHTML="here is the message <br> There is nothing to be said"
-document.getElementsByTagName(message)
-//document.body.innerHTML = "<h1>Hello, Tags!</h1>";
+var h1 = document.getElementsByTagName("h1")
+h1[0].innerHTML = "this is a website"
 document.title="Hello, JavaScript!"
+var newParagraph = document.createElement("p");
+newParagraph.innerHTML = "Made with JavaScript";
+
+var div = document.getElementById("message");
+div.appendChild(newParagraph);
   </script>
 </body>
 </html>
